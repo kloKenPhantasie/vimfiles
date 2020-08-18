@@ -1,0 +1,19 @@
+# vim-plug {{{1
+# Location
+autoload/plug.vim*
+# Plugins
+plugged
+# Documentation
+doc/plug.txt
+# }}}1
+
+# Tags of documentation
+doc/tags
+# Swap files
+tmp
+# Garbage file created by macOS's Finder
+.DS_Store
+# NETRW's history
+.netrwhist
+# Custom color schemes (should be in their own repos)
+colors
