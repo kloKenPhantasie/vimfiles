@@ -252,7 +252,9 @@ se softtabstop=-1              " <Tab> should insert 'sw' spaces
 
 " Highlight some columns
 " Helps me to avoid writing long lines
-se colorcolumn=73,89,90,91,92,93,94,95,96,97,98,99
+if has('syntax')
+    se colorcolumn=73,89,90,91,92,93,94,95,96,97,98,99
+endif
 
 se autoindent
 
@@ -269,12 +271,15 @@ se belloff=all                  " Remove Vim's annoying sounds
 se confirm                      " Ask for confirmation when deleting an
                                 " unsaved buffer
 
-se cursorline                   " Highlight the cursor's line
+if has('syntax')
+    se cursorline               " Highlight the cursor's line
+endif
+
 se encoding=utf8
 
-se foldmethod=marker            " Creates folds using markers
-                                " (i.e: those triple braces sprinkled
-                                " all over this file)
+if has('folding')               " Creates folds using markers
+    se foldmethod=marker        " (i.e: those triple braces sprinkled
+endif                           " all over this file)
 
 se hidden                       " Switch between buffers without having
                                 " to save first
@@ -314,7 +319,9 @@ se scrolloff=3                  " There should always be at least 3
                                 " inspired by git, which shows 3 lines
                                 " of context around chunks by default)
 
-se showcmd
+if has('cmdline_info')
+    se showcmd
+endif
 
 se noshowmode                   " Don't show the mode in the last line;
                                 " Airline already does
@@ -325,8 +332,9 @@ se ttimeoutlen=50               " wait up to 50ms after Esc for special
 
 se updatetime=250
 
-se wildmenu                     " Display completion matches in a status
-                                " line
+if has('wildmenu')              " Display completion matches in a status
+    se wildmenu                 " line
+endif
 
 se wildmode=longest             " Complete longest common string,
 se wildmode+=full               " then each full match
