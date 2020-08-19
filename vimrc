@@ -256,79 +256,80 @@ se colorcolumn=73,89,90,91,92,93,94,95,96,97,98,99
 
 se autoindent
 
-se autoread                    " Update the file automatically when
-                               " changed outside of Vim
+se autoread                     " Update the file automatically when
+                                " changed outside of Vim
 
-se backspace=indent,eol,nostop " Pressing <BS> in insert mode can remove
-                               " indents and merge lines. You can also
-                               " backspace before the insertion point
+se backspace=indent,eol,nostop  " Pressing <BS> in insert mode can
+                                " remove indents and merge lines. You
+                                " also backspace before the insertion
+                                " point
 
-se belloff=all                 " Remove Vim's annoying sounds
+se belloff=all                  " Remove Vim's annoying sounds
 
-se confirm                     " Ask for confirmation when deleting an
-                               " unsaved buffer
+se confirm                      " Ask for confirmation when deleting an
+                                " unsaved buffer
 
-se cursorline                  " Highlight the cursor's line
+se cursorline                   " Highlight the cursor's line
 se encoding=utf8
 
-se foldmethod=marker           " Creates folds using markers
-                               " (i.e: those triple braces sprinkled
-                               " all over this file)
+se foldmethod=marker            " Creates folds using markers
+                                " (i.e: those triple braces sprinkled
+                                " all over this file)
 
-se hidden                      " Switch between buffers without having
-                               " to save first
+se hidden                       " Switch between buffers without having
+                                " to save first
 
-se ignorecase                  " Ignore casing by default in patterns
-se smartcase                   " unless there are any uppercased
-                               " characters in them
+se ignorecase                   " Ignore casing by default in patterns
+se smartcase                    " unless there are any uppercased
+                                " characters in them
 
 se lazyredraw
 
-se list                        " Render visible:
-se listchars=tab:\|\           " - tabs
-se listchars+=trail:·          " - trailing spaces
-se listchars+=nbsp:¬           " - non-breaking spaces
+se list                         " Render visible:
+se listchars=tab:\|\            " - tabs
+se listchars+=trail:·           " - trailing spaces
+se listchars+=nbsp:¬            " - non-breaking spaces
 
-se nomodeline                  " Modelines are unsafe; disable them
+se nomodeline                   " Modelines are unsafe; disable them
 
-                               " Enable <C-A> and <C-X> for:
-se nrformats=bin               " - binary literals
-se nrformats=hex               " - hexadecimal literals
-se nrformats=octal             " - octal literals
+                                " Enable <C-A> and <C-X> for:
+se nrformats=bin                " - binary literals
+se nrformats=hex                " - hexadecimal literals
+se nrformats=octal              " - octal literals
 
-se number                      " Show line number at cursor
-se relativenumber              " and a line number relative to the line
-                               " of the cursor for any other lines
-                               " See `:h number_relativenumber`
+se number                       " Show line number at cursor
+se relativenumber               " and a line number relative to the line
+                                " of the cursor for any other lines
+                                " See `:h number_relativenumber`
 
-se mouse=                      " Disable the mouse
+se mouse=                       " Disable the mouse
 
 se pastetoggle=<F2>
 
-se scrolloff=3                 " There should always be at least 3 lines
-                               " above and below the cursor;
-                               " that's not the case, scroll the text if
-                               " possible
-                               " (the choice of the number 3 was
-                               " inspired by git, which shows 3 lines of
-                               " context around chunks by default)
+se scrolloff=3                  " There should always be at least 3
+                                " lines above and below the cursor;
+                                " that's not the case, scroll the text
+                                " if possible
+                                " (the choice of the number 3 was
+                                " inspired by git, which shows 3 lines
+                                " of context around chunks by default)
 
 se showcmd
 
-se noshowmode                  " Don't show the mode in the last line;
-                               " Airline already does
+se noshowmode                   " Don't show the mode in the last line;
+                                " Airline already does
 
-se ttimeout                    " time out for key codes
-se ttimeoutlen=50              " wait up to 50ms after Esc for special
-                               " key
+se ttimeout                     " time out for key codes
+se ttimeoutlen=50               " wait up to 50ms after Esc for special
+                                " key
 
 se updatetime=250
 
-se wildmenu                    " Display completion matches in a status
-                               " line
+se wildmenu                     " Display completion matches in a status
+                                " line
 
-se wildmode=longest            " Complete longest common string,
-se wildmode+=full              " then each full match
+se wildmode=longest             " Complete longest common string,
+se wildmode+=full               " then each full match
 
 " MISCELLANEOUS {{{1
 
