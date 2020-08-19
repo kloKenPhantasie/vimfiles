@@ -342,4 +342,6 @@ if has('extra_search')
     endif
 endif
 
-com! CurrentTrack echo current_track#main(v:echospace)
+if has('osxdarwin')
+    com! CurrentTrack echo current_track#main(v:echospace)
+endif
