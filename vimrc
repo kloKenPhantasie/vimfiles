@@ -120,14 +120,14 @@ Plug 'vimwiki/vimwiki'
 " Helps you naviagate to any word in the line using 'f' and 't'
 Plug 'unblevable/quick-scope'
 
+" Allows to use the dot command for plugins's custom mappings
+Plug 'tpope/vim-repeat'
+
 " Emmet completions for HTML/CSS, etc.
 " Plug 'mattn/emmet-vim'
 
 " Helps identify spelling mistakes in code
 " Plug 'jaxbot/semantic-highlight.vim'
-
-" Allows to use the dot command for plugins's custom mappings
-Plug 'tpope/vim-repeat'
 
 call plug#end()
 
