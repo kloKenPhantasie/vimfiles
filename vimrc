@@ -319,6 +319,15 @@ se scrolloff=3                  " There should always be at least 3
                                 " inspired by git, which shows 3 lines
                                 " of context around chunks by default)
 
+if has('extra_search')
+    set incsearch               " Update search results as you type
+
+    if !&hlsearch               " Don't highlight results when
+                                " resourcing this file
+        set hlsearch            " Enable result highlighting
+    endif
+endif
+
 if has('cmdline_info')
     se showcmd
 endif
@@ -342,14 +351,6 @@ se wildmode+=full               " then each full match
 " MISCELLANEOUS {{{1
 
 packadd! matchit      " Improved % matching
-
-if has('extra_search')
-    set incsearch     " Update search results as you type
-
-    if !&hlsearch     " Don't highlight results when resourcing this file
-        set hlsearch  " Highlight search results
-    endif
-endif
 
 if has('osxdarwin')
     com! CurrentTrack echo current_track#main(v:echospace)
