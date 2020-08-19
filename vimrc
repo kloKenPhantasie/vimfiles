@@ -295,6 +295,11 @@ se nrformats=bin               " - binary literals
 se nrformats=hex               " - hexadecimal literals
 se nrformats=octal             " - octal literals
 
+se number                      " Show line number at cursor
+se relativenumber              " and a line number relative to the line
+                               " of the cursor for any other lines
+                               " See `:h number_relativenumber`
+
 se mouse=                      " Disable the mouse
 
 se pastetoggle=<F2>
