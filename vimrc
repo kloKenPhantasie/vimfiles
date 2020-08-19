@@ -299,8 +299,8 @@ se nomodeline                   " Modelines are unsafe; disable them
 
                                 " Enable <C-A> and <C-X> for:
 se nrformats=bin                " - binary literals
-se nrformats=hex                " - hexadecimal literals
-se nrformats=octal              " - octal literals
+se nrformats+=hex               " - hexadecimal literals
+se nrformats+=octal             " - octal literals
 
 se number                       " Show line number at cursor
 se relativenumber               " and a line number relative to the line
