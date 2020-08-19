@@ -259,8 +259,9 @@ se autoindent
 se autoread                    " Update the file automatically when
                                " changed outside of Vim
 
-se backspace=indent,eol,start  " Pressing <BS> in insert mode can remove
-                               " indents and merge lines
+se backspace=indent,eol,nostop " Pressing <BS> in insert mode can remove
+                               " indents and merge lines. You can also
+                               " backspace before the insertion point
 
 se belloff=all                 " Remove Vim's annoying sounds
 
