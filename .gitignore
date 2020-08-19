@@ -17,3 +17,5 @@ tmp
 .netrwhist
 # Custom color schemes (should be in their own repos)
 colors
+# Vim's history
+viminfo

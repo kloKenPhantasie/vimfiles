@@ -226,14 +226,20 @@ let g:yui_folds        = 'emphasize'
 colorscheme hybrid
 let g:airline_theme = 'dark'
 
-" SETTING UP THE SWAP DIRECTORY {{{1
-
+" STORE VIM FILES INTO VIMFILES DIRECTORY {{{1
+" Swap directory {{{2
 let s:directory_folder = s:VimFolder() . 'tmp'
 silent call execute('se directory=' . s:directory_folder)
 
 " Create the swap directory if it doesn't exist
 if has('unix') && !s:FileExists(s:directory_folder)
     silent !mkdir ~/.vim/tmp
+endif
+
+" Viminfo file {{{2
+let s:viminfo_folder  = s:VimFolder() . 'vimfiles'
+if has('viminfo')
+    silent call execute('se viminfo=' . s:viminfo_folder)
 endif
 
 " AUTOGROUPS {{{1
