@@ -121,7 +121,7 @@ Plug 'vimwiki/vimwiki'
 Plug 'unblevable/quick-scope'
 
 " Emmet completions for HTML/CSS, etc.
-Plug 'mattn/emmet-vim'
+" Plug 'mattn/emmet-vim'
 
 " Helps identify spelling mistakes in code
 " Plug 'jaxbot/semantic-highlight.vim'
