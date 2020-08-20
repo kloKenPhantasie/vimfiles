@@ -324,7 +324,7 @@ se scrolloff=3                  " There should always be at least 3
                                 " if possible
                                 " (the choice of the number 3 was
                                 " inspired by git, which shows 3 lines
-                                " of context around chunks by default)
+                                " of context around hunks by default)
 
 if has('extra_search')
     set incsearch               " Update search results as you type
