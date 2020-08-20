@@ -263,9 +263,7 @@ se softtabstop=-1         " <Tab> should insert 'sw' spaces
 
 " Highlight some columns
 " Helps me to avoid writing long lines
-if has('syntax')
-    se colorcolumn=73,89,90,91,92,93,94,95,96,97,98,99
-endif
+se colorcolumn=73,89,90,91,92,93,94,95,96,97,98,99
 
 se autoindent
 
@@ -282,9 +280,7 @@ se belloff=all            " Remove Vim's annoying sounds
 se confirm                " Ask for confirmation when deleting an
                           " unsaved buffer
 
-if has('syntax')
-    se cursorline         " Highlight the cursor's line
-endif
+se cursorline             " Highlight the cursor's line
 
 se encoding=utf8
 
