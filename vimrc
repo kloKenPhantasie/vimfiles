@@ -136,11 +136,6 @@ endif
 
 call plug#end()
 
-" GLOBAL VARIABLES {{{1
-
-" Default wikis for vimwiki
-let g:vimwiki_list = [{ 'path' : $VIMWIKI_LOCATION }]
-
 " LEADER {{{1
 
 let mapleader      = ' '   " 1 space
@@ -247,12 +242,6 @@ if has('viminfo')
     silent call execute('se viminfo=' . s:viminfo_folder)
 endif
 
-" AUTOGROUPS {{{1
-augroup disableNETRWFoldColumn  " {{{2
-    au!
-    au BufEnter,WinEnter * if &filetype ==? 'netrw' | se foldcolumn=0
-augroup END  " }}}2
-
 " OPTIONS {{{1
 " Controversial indentation settings {{{2
 se expandtab              " Prefer spaces over tabs
@@ -356,4 +345,12 @@ se wildmode+=full         " then each full match
 " MISCELLANEOUS {{{1
 
 packadd! matchit      " Improved % matching
+
+" Default wikis for vimwiki
+let g:vimwiki_list = [{ 'path' : $VIMWIKI_LOCATION }]
+
+augroup disableNETRWFoldColumn  " {{{2
+    au!
+    au BufEnter,WinEnter * if &filetype ==? 'netrw' | se foldcolumn=0
+augroup END  " }}}2
 
