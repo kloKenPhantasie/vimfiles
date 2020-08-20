@@ -60,13 +60,17 @@ endfun
 if has('unix')
     " Download and install vim-plug {{{3
     if !s:FileExists('~/.vim/autoload/plug.vim')
+        echomsg 'Downloading vim-plug'
         call s:download_vim_plug()
         " Install vim-plug
+        echomsg 'Installing vim-plug'
         autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
     endif
     " Download and install vim-plug's documentation {{{3
     if !s:FileExists('~/.vim/doc/plug.txt')
+        echomsg "Downloading vim-plug's help file"
         call s:download_vim_plug_doc()
+        echomsg "Fetching tags of vim-plug's help file"
         call s:install_vim_plug_doc()
     endif  " }}}3
 endif
