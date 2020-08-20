@@ -255,10 +255,10 @@ augroup END  " }}}2
 
 " OPTIONS {{{1
 " Controversial indentation settings {{{2
-se expandtab                   " Prefer spaces over tabs
-se tabstop=8                   " Tabs are 8 columns wide
-se shiftwidth=4                " Indent using 4 spaces
-se softtabstop=-1              " <Tab> should insert 'sw' spaces
+se expandtab              " Prefer spaces over tabs
+se tabstop=8              " Tabs are 8 columns wide
+se shiftwidth=4           " Indent using 4 spaces
+se softtabstop=-1         " <Tab> should insert 'sw' spaces
 " }}}2
 
 " Highlight some columns
@@ -269,73 +269,72 @@ endif
 
 se autoindent
 
-se autoread                     " Update the file automatically when
-                                " changed outside of Vim
+se autoread               " Update the file automatically when changed
+                          " outside of Vim
 
-                                " You can now use <BS> to:
-se backspace=indent             " - remove a level of indentation
-se backspace+=eol               " - remove new lines characters
-se backspace+=nostop            " - backspace before the insertion point
+                          " You can now use <BS> to:
+se backspace=indent       " - remove a level of indentation
+se backspace+=eol         " - remove new lines characters
+se backspace+=nostop      " - backspace before the insertion point
 
-se belloff=all                  " Remove Vim's annoying sounds
+se belloff=all            " Remove Vim's annoying sounds
 
-se confirm                      " Ask for confirmation when deleting an
-                                " unsaved buffer
+se confirm                " Ask for confirmation when deleting an
+                          " unsaved buffer
 
 if has('syntax')
-    se cursorline               " Highlight the cursor's line
+    se cursorline         " Highlight the cursor's line
 endif
 
 se encoding=utf8
 
-if has('folding')               " Creates folds using markers
-    se foldmethod=marker        " (i.e: those triple braces sprinkled
-endif                           " all over this file)
+if has('folding')         " Creates folds using markers
+    se foldmethod=marker  " (i.e: those triple braces sprinkled all over
+endif                     " this file)
 
-se hidden                       " Switch between buffers without having
-                                " to save first
+se hidden                 " Switch between buffers without having to
+                          " save first
 
-se ignorecase                   " Ignore casing by default in patterns
-se smartcase                    " unless there are any uppercased
-                                " characters in them
+se ignorecase             " Ignore casing by default in patterns
+se smartcase              " unless there are any uppercased characters
+                          " in them
 
 se lazyredraw
 
-se list                         " Render visible:
-se listchars=tab:\|\            " - tabs
-se listchars+=trail:·           " - trailing spaces
-se listchars+=nbsp:¬            " - non-breaking spaces
+se list                   " Render visible:
+se listchars=tab:\|\      " - tabs
+se listchars+=trail:·     " - trailing spaces
+se listchars+=nbsp:¬      " - non-breaking spaces
 
-se nomodeline                   " Modelines are unsafe; disable them
+se nomodeline             " Modelines are unsafe; disable them
 
-                                " Enable <C-A> and <C-X> for:
-se nrformats=bin                " - binary literals
-se nrformats+=hex               " - hexadecimal literals
-se nrformats+=octal             " - octal literals
+                          " Enable <C-A> and <C-X> for:
+se nrformats=bin          " - binary literals
+se nrformats+=hex         " - hexadecimal literals
+se nrformats+=octal       " - octal literals
 
-se number                       " Show line number at cursor
-se relativenumber               " and a line number relative to the line
-                                " of the cursor for any other lines
-                                " See `:h number_relativenumber`
+se number                 " Show line number at cursor
+se relativenumber         " and a line number relative to the line of
+                          " the cursor for any other lines
+                          " See `:h number_relativenumber`
 
-se mouse=                       " Disable the mouse
+se mouse=                 " Disable the mouse
 
 se pastetoggle=<F2>
 
-se scrolloff=3                  " There should always be at least 3
-                                " lines above and below the cursor;
-                                " that's not the case, scroll the text
-                                " if possible
-                                " (the choice of the number 3 was
-                                " inspired by git, which shows 3 lines
-                                " of context around hunks by default)
+se scrolloff=3            " There should always be at least 3 lines
+                          " above and below the cursor, otherwise scroll
+                          " the text if possible
+                          " (the choice of the number 3 was inspired by
+                          " git, which shows 3 lines of context around
+                          " hunks by default)
 
 if has('extra_search')
-    set incsearch               " Update search results as you type
+    set incsearch         " Update search results as you type
 
-    if !&hlsearch               " Don't highlight results when
-                                " resourcing this file
-        set hlsearch            " Enable result highlighting
+    if !&hlsearch         " Don't highlight results when resourcing this
+                          " file
+        set hlsearch      " Enable result highlighting
     endif
 endif
 
@@ -343,21 +342,20 @@ if has('cmdline_info')
     se showcmd
 endif
 
-se noshowmode                   " Don't show the mode in the last line;
-                                " Airline already does
+se noshowmode             " Don't show the mode in the last line;
+                          " Airline already does
 
-se ttimeout                     " time out for key codes
-se ttimeoutlen=50               " wait up to 50ms after Esc for special
-                                " key
+se ttimeout               " time out for key codes
+se ttimeoutlen=50         " wait up to 50ms after Esc for special key
 
 se updatetime=250
 
-if has('wildmenu')              " Display completion matches in a status
-    se wildmenu                 " line
+if has('wildmenu')        " Display completion matches in a status line
+    se wildmenu
 endif
 
-se wildmode=longest             " Complete longest common string,
-se wildmode+=full               " then each full match
+se wildmode=longest       " Complete longest common string,
+se wildmode+=full         " then each full match
 
 " MISCELLANEOUS {{{1
 
