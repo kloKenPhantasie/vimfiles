@@ -124,6 +124,10 @@ Plug 'unblevable/quick-scope'
 " Allows to use the dot command for plugins's custom mappings
 Plug 'tpope/vim-repeat'
 
+if has('osxdarwin')
+    Plug '~/.vim/plugged/iTunes-current-track'
+endif
+
 " Emmet completions for HTML/CSS, etc.
 " Plug 'mattn/emmet-vim'
 
@@ -359,6 +363,3 @@ se wildmode+=full               " then each full match
 
 packadd! matchit      " Improved % matching
 
-if has('osxdarwin')
-    com! CurrentTrack echo current_track#main(v:echospace)
-endif

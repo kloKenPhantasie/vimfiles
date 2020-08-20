@@ -41,7 +41,7 @@ fun s:CompileScript() abort  " {{{1
 endfun  " }}}1
 
 " Displays current track in the format 'Title[ — Album] — Artist'
-fun! {expand('<sfile>:t:r')}#main(max_col_no=0) abort  " {{{1
+fun! current_track#main(max_col_no=0) abort  " {{{1
     call s:CompileScript()
     const scpt = 'osascript ' . s:compiled
     try   | let [title, album, artist] = systemlist(scpt)
@@ -58,7 +58,7 @@ fun! {expand('<sfile>:t:r')}#main(max_col_no=0) abort  " {{{1
     return long_res
 endfun
 
-fun {expand('<sfile>:t:r')}#reset_script() abort " {{{1
+fun current_track#reset_script() abort " {{{1
     call system('rm ' . s:compiled)
     call system('mv -f '. s:ource_code . '.template ' . s:ource_code)
 endfun

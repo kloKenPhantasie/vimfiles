@@ -2,7 +2,9 @@
 # Location
 autoload/plug.vim*
 # Plugins
-plugged
+plugged/*
+# Don't ignore my plugin
+!plugged/iTunes-current-track
 # Documentation
 doc/plug.txt
 # }}}1
