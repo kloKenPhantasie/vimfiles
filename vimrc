@@ -73,7 +73,8 @@ endif
 
 " vim-plug configuration {{{2
 
-call plug#begin(s:VimFolder() . 'plugged')
+let s:vim_plug_folder = s:VimFolder() . 'plugged'
+call plug#begin(s:vim_plug_folder)
 
 " Filetype plugins {{{3
 " Golang
