@@ -93,7 +93,7 @@ fun s:try_to_get_vim_plug() abort
 \       vim_plug      : '~/.vim/autoload/plug.vim',
 \       vim_plug_docs : '~/.vim/doc/plug.txt',
 \   }
-    for [install, path] in installs
+    for [install, path] in items(installs)
         let l:toggle_variable_name = 'skip_' . install . '_install'
         if get(s:, l:toggle_variable_name, v:false)
             " User has skipped further installs
