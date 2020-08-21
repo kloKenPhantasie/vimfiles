@@ -4,7 +4,7 @@
 " 1,000 thanks to romainl for his "idiomatic vimrc" project.
 " Give it a read: https://github.com/romainl/idiomatic-vimrc#readme
 
-" SANITY CHECKS {{{1
+" GUARDS {{{1
 " This vimrc isn't very useful without the +eval and +syntax features
 
 " See `:h no-eval-feature`
