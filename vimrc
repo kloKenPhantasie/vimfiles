@@ -281,7 +281,7 @@ endif
 " Viminfo file {{{2
 let s:viminfo_folder  = s:VimFolder() . 'vimfiles'
 if has('viminfo')
-    silent call execute('se viminfo=' . s:viminfo_folder)
+    silent call execute('se viminfofile=' . s:viminfo_folder)
 endif
 
 " OPTIONS {{{1
