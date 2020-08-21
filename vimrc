@@ -42,38 +42,76 @@ endfun
 " Install vim-plug if you don't have it yet {{{2
 " This will only work on Unix machines (BSD, Linux, etc.)
 " Helper functions {{{3
-fun s:download_vim_plug() abort
+fun s:get_vim_plug() abort
+    if !s:user_wants_to('Get vim-plug?')
+        return v:false
+    endif
+    echomsg 'Downloading vim-plug'
     !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
 \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    echomsg 'Installing vim-plug'
+    autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+    return v:true
 endfun
 
-fun s:download_vim_plug_doc() abort
+fun s:get_vim_plug_docs() abort
+    if !s:user_wants_to("Get vim-plug's docs?")
+        return v:false
+    endif
+    echomsg "Downloading vim-plug's help file"
     !curl -fLo ~/.vim/doc/plug.txt --create-dirs
 \ https://raw.githubusercontent.com/junegunn/vim-plug/master/doc/plug.txt
+    echomsg "Scanning tags of vim-plug's help file"
+    helptags ~/.vim/doc
+    return v:true
 endfun
 
-fun s:install_vim_plug_doc() abort
-    helptags ~/.vim/doc
+fun s:user_wants_to(prompt) abort
+    let [l:yes, l:no] = [1, 2]
+    let l:res = a:prompt->confirm("&Yes\n&No")
+    return l:res == l:yes
 endfun
 " }}}3
 
-if has('unix')
-    " Download and install vim-plug {{{3
-    if !s:FileExists('~/.vim/autoload/plug.vim')
-        echomsg 'Downloading vim-plug'
-        call s:download_vim_plug()
-        " Install vim-plug
-        echomsg 'Installing vim-plug'
-        autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+" UNTESTED
+fun s:try_to_get_vim_plug() abort
+    if !has('unix')
+        " This script requires Unix to run, as it is dependent on the
+        " existence of the cURL command in the path (installed natively
+        " on many Unix machines), and uses Unix-style path
+        " representations
+        return
     endif
-    " Download and install vim-plug's documentation {{{3
-    if !s:FileExists('~/.vim/doc/plug.txt')
-        echomsg "Downloading vim-plug's help file"
-        call s:download_vim_plug_doc()
-        echomsg "Fetching tags of vim-plug's help file"
-        call s:install_vim_plug_doc()
-    endif  " }}}3
+    if !has('dialog_' . (has('gui_running') ? 'gui' : 'con'))
+        " Can't ask if the user wants to get vim-plug; default to no
+        return
+    endif
+
+    let l:msg = 'Add the following line at the start of your '
+    let l:msg.= 'vimrc to avoid being prompted in the future:'
+    let installs = #{
+\       vim_plug      : '~/.vim/autoload/plug.vim',
+\       vim_plug_docs : '~/.vim/doc/plug.txt',
+\   }
+    for [install, path] in installs
+        let l:toggle_variable_name = 'skip_' . install . '_install'
+        if get(s:, l:toggle_variable_name, v:false)
+            " User has skipped further installs
+            return
+        endif
+        if FileExists(path)
+            " No need to install
+            continue
+        endif
+        if !s:get_{install}()
+            let l:ine = 'let s:skip_' . install . '_install = v:true'
+            echomsg l:msg . "\n" . l:ine
+            return
+        endif
+    endfor
 endif
+
+call s:try_to_get_vim_plug()
 
 " vim-plug configuration {{{2
 
