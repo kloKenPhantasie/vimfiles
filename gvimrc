@@ -6,10 +6,6 @@ se notitle
 " When Vim shows a file browser, point it at the current directory
 se browsedir=current
 
-if g:colors_name ==? 'hybrid'
-    se background=dark
-endif
-
 " SET FONTS {{{1
 " Quickly see gVim's font size
 nnoremap <leader>F :se gfn?<cr>

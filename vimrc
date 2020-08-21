@@ -265,6 +265,9 @@ let g:yui_comments     = 'fade'
 let g:yui_line_numbers = 'emphasize'
 let g:yui_folds        = 'emphasize'
 
+if has('gui_running')
+    se background=dark
+endif
 colorscheme hybrid
 let g:airline_theme = 'dark'
 
