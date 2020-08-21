@@ -9,18 +9,18 @@
 
 " See `:h no-eval-feature`
 silent! while 0
-    echomsg "Your Vim doesn't have the +eval feature."
+    echoerr "Your Vim doesn't have the +eval feature."
     finish
 silent! endwhile
 
 if !has('syntax')
-    echomsg "Your Vim doesn't have the +syntax feature."
+    echoerr "Your Vim doesn't have the +syntax feature."
     finish
 endif
 
 " I don't know if this script will work with NeoVim
 if has('nvim')
-    echomsg "You are using NeoVim, not Vim."
+    echoerr "You are using NeoVim, not Vim."
     finish
 endif
 
