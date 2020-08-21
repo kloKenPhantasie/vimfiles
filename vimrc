@@ -99,7 +99,7 @@ fun s:try_to_get_vim_plug() abort
             " User has skipped further installs
             return
         endif
-        if FileExists(path)
+        if s:FileExists(path)
             " No need to install
             continue
         endif
