@@ -109,7 +109,7 @@ fun s:try_to_get_vim_plug() abort
             return
         endif
     endfor
-endif
+endfun
 
 call s:try_to_get_vim_plug()
 
