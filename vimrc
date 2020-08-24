@@ -394,6 +394,9 @@ packadd! matchit      " Improved % matching
 " Default wikis for vimwiki
 let g:vimwiki_list = [{ 'path' : $VIMWIKI_LOCATION }]
 
+" Disable vim-surround's insert mappings
+let g:surround_no_insert_mappings = v:true
+
 augroup disableNETRWFoldColumn  " {{{2
     au!
     au BufEnter,WinEnter * if &filetype ==? 'netrw' | se foldcolumn=0
