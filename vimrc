@@ -282,7 +282,7 @@ if has('unix') && !s:FileExists(s:directory_folder)
 endif
 
 " Viminfo file {{{2
-let s:viminfo_folder  = s:VimFolder() . 'vimfiles'
+let s:viminfo_folder  = s:VimFolder() . 'viminfo'
 if has('viminfo')
     silent call execute('se viminfofile=' . s:viminfo_folder)
 endif
