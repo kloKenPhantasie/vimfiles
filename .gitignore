@@ -21,3 +21,5 @@ tmp
 colors
 # Vim's history
 viminfo
+# Ignore spellfile
+spell
