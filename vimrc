@@ -241,6 +241,11 @@ inoremap        <Space>
 " ... unless you actually want to
 inoremap <C-V>   
 
+" Automatically close braces, brackets, parentheses
+inoremap {<CR> {<CR>}<C-O>O
+inoremap [<CR> [<CR>]<C-O>O
+inoremap (<CR> (<CR>)<C-O>O
+
 " For AZERTY keyboards {{{2
 "
 " Quickly insert a blank line
