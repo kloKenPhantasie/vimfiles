@@ -124,13 +124,7 @@ Plug 'fatih/vim-go', { 'do' : ':GoInstallBinaries' }
 " Swift
 Plug 'keith/swift.vim'
 " Color schemes {{{3
-Plug 'Lokaltog/vim-monotone'
-" Plug 'andreypopp/vim-colors-plain'
-" Plug 'cideM/yui'
-" Plug 'danishprakash/vim-yami'
-Plug 'srcery-colors/srcery-vim'
 Plug 'w0ng/vim-hybrid'
-Plug 'whatyouhide/vim-gotham'
 " Plugins for working with Git {{{3
 Plug 'tpope/vim-fugitive'
 " Git ↑
@@ -261,11 +255,6 @@ inoremap § \|
 tnoremap § \|
 
 " THEMING {{{1
-
-" Settings for the 'yui' colorscheme
-let g:yui_comments     = 'fade'
-let g:yui_line_numbers = 'emphasize'
-let g:yui_folds        = 'emphasize'
 
 if has('gui_running')
     se background=dark
