@@ -123,14 +123,15 @@ call plug#begin(s:vim_plug_folder)
 Plug 'fatih/vim-go', { 'do' : ':GoInstallBinaries' }
 " Swift
 Plug 'keith/swift.vim'
-" Color schemes {{{3
-Plug 'w0ng/vim-hybrid'
 " Plugins for working with Git {{{3
 Plug 'tpope/vim-fugitive'
 " Git ↑
 " Hub ↓
 Plug 'tpope/vim-rhubarb'
 " }}}3
+
+" My default color scheme
+Plug 'w0ng/vim-hybrid'
 
 " Displays useful information in the statusline in a pretty way
 Plug 'vim-airline/vim-airline'
