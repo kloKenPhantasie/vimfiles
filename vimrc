@@ -142,9 +142,6 @@ Plug 'tpope/vim-rhubarb'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
-" Syntax checker for many languages
-Plug 'vim-syntastic/syntastic'
-
 " Displays the relevant color for an RGB hex code or CSS color name
 Plug 'ap/vim-css-color'
 
