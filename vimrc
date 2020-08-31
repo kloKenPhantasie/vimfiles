@@ -238,6 +238,23 @@ inoremap {<CR> {<CR>}<C-O>O
 inoremap [<CR> [<CR>]<C-O>O
 inoremap (<CR> (<CR>)<C-O>O
 
+if !empty(expand("$AZERTY")) " {{{2
+    " Quickly insert a blank line
+    " Convenient mappings for Apple's AZERTY keyboard
+    nnoremap § o<Esc>k
+    nnoremap ¶ O<Esc>j
+
+    " Toggle casing of a single character
+    noremap ç ~
+    " Toggle casing of a word
+    vnoremap Ç viwç
+
+    " Typing the pipe character is inconvenient in AZERTY keyboards
+    cnoremap § \|
+    inoremap § \|
+    tnoremap § \|
+endif
+
 " THEMING {{{1
 
 if has('gui_running')
