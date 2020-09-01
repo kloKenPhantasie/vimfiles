@@ -133,6 +133,9 @@ Plug 'tpope/vim-rhubarb'
 " My default color scheme
 Plug 'w0ng/vim-hybrid'
 
+" Very dark color scheme
+Plug 'whatyouhide/vim-gotham'
+
 " Displays useful information in the statusline in a pretty way
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
