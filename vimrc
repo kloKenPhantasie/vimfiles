@@ -260,6 +260,8 @@ endif
 
 " THEMING {{{1
 
+let g:hybrid_reduced_contrast = 1
+
 if has('gui_running')
     se background=dark
 endif
