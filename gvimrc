@@ -6,6 +6,9 @@ se notitle
 " When Vim shows a file browser, point it at the current directory
 se browsedir=current
 
+" Disable MacVim's default touch bar button
+let g:macvim_default_touchbar_fullscreen=0
+
 " SET FONTS {{{1
 " Quickly see gVim's font size
 nnoremap <leader>F :se gfn?<cr>
