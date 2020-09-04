@@ -266,7 +266,7 @@ if has('gui_running')
     se background=dark
 endif
 colorscheme hybrid
-let g:airline_theme = 'dark'
+let g:airline_theme = 'hybridline'
 
 " STORE VIM FILES INTO VIMFILES DIRECTORY {{{1
 " Swap directory {{{2
