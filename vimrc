@@ -232,7 +232,7 @@ tnoremap <silent> <C-W>ZQ <C-W>:qall<cr>
 " a confirmation prompt will be displayed)
 
 " Don't insert non-breaking spaces in text
-inoremap        <Space>
+noremap!        <Space>
 " ... unless you actually want to
 inoremap <C-V>   
 
@@ -253,9 +253,8 @@ if !empty($AZERTY) " {{{2
     vnoremap Ç viwç
 
     " Typing the pipe character is inconvenient in AZERTY keyboards
-    cnoremap § \|
-    inoremap § \|
-    tnoremap § \|
+     noremap! § \|
+    tnoremap  § \|
 else
     " Quickly insert a blank line
     " Convenient mappings for Apple's English International keyboard
