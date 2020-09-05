@@ -256,6 +256,11 @@ if !empty($AZERTY) " {{{2
     cnoremap § \|
     inoremap § \|
     tnoremap § \|
+else
+    " Quickly insert a blank line
+    " Convenient mappings for Apple's English International keyboard
+    nnoremap § o<Esc>k
+    nnoremap ± O<Esc>j
 endif
 
 " THEMING {{{1
