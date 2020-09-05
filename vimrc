@@ -260,7 +260,8 @@ else
     nnoremap ± O<Esc>j
 
     " § is closer to the home row than <Esc>
-     noremap  § <Esc>
+    onoremap  § <Esc>
+    vnoremap  § <Esc>
      noremap! § <Esc>
     tnoremap  § <Esc>
 endif
