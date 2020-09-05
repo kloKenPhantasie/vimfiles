@@ -233,8 +233,6 @@ tnoremap <silent> <C-W>ZQ <C-W>:qall<cr>
 
 " Don't insert non-breaking spaces in text
 noremap!        <Space>
-" ... unless you actually want to
-inoremap <C-V>   
 
 " Automatically close braces, brackets, parentheses
 inoremap {<CR> {<CR>}<C-O>O
