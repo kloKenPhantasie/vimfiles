@@ -10,7 +10,12 @@ if !has('osxdarwin')
     finish
 endif
 
-let s:ource_code = expand('<sfile>:p:r') . '.applescript'
+let s:ource_code =<< trim APPLESCRIPT
+    tell app "" to¬
+        return (get current track's name) & "\n"¬
+            &  (get current track's album) & "\n"¬
+            &  (get current track's artist) & "\n"
+APPLESCRIPT
 let s:compiled   = expand('<sfile>:p:r') . '.scpt'
 
 fun s:FileExists(file) abort  " {{{1
@@ -31,13 +36,9 @@ fun s:wrap(input, max_column_no, wrapchar='') abort  " {{{1
 endfun
 
 fun s:CompileScript() abort  " {{{1
-    call s:FileExists(s:ource_code)->assert_true('current_track.applescript not found')
     if !s:FileExists(s:compiled)
         call system('open -gjb com.Apple.music')
-        let app_name = v:shell_error ? '"iTunes"' : '"Music"'
-        call system("sed -e 's/\"\"/" . app_name . '/g '
-\           . '-i .template ' . shellescape(s:ource_code))
-        call system('osacompile ' . shellescape(s:ource_code) . ' -o ' . s:compiled)
+        call system('osacompile -e ' . shellescape(s:ource_code))
     endif
 endfun  " }}}1
 
@@ -61,6 +62,5 @@ endfun
 
 fun current_track#reset_script() abort " {{{1
     call system('rm ' . s:compiled)
-    call system('mv -f '. s:ource_code . '.template ' . s:ource_code)
 endfun
 
