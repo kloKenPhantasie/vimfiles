@@ -35,7 +35,7 @@ fun s:CompileScript() abort  " {{{1
         call system('open -gjb com.Apple.music')
         let app_name = v:shell_error ? '"iTunes"' : '"Music"'
         call system("sed -e 's/\"\"/" . app_name . '/g '
-            . '-i .template ' . shellescape(s:ource_code))
+\           . '-i .template ' . shellescape(s:ource_code))
         call system('osacompile ' . shellescape(s:ource_code) . ' -o ' . s:compiled)
     endif
 endfun  " }}}1
