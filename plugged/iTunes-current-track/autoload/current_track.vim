@@ -29,6 +29,7 @@ fun s:wrap(input, max_column_no, wrapchar='') abort  " {{{1
         \ . '}\zs.*',
         \ a:wrapchar, '')
 endfun
+
 fun s:CompileScript() abort  " {{{1
     call s:FileExists(s:ource_code)->assert_true('current_track.applescript not found')
     if !s:FileExists(s:compiled)
