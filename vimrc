@@ -261,6 +261,11 @@ else
     " Convenient mappings for Apple's English International keyboard
     nnoremap § o<Esc>k
     nnoremap ± O<Esc>j
+
+    " § is closer to the home row than <Esc>
+     noremap  § <Esc>
+     noremap! § <Esc>
+    tnoremap  § <Esc>
 endif
 
 " THEMING {{{1
