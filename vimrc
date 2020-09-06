@@ -165,6 +165,8 @@ if has('osxdarwin')
     Plug '~/.vim/plugged/iTunes-current-track'
 endif
 
+Plug 'vim/killersheep'
+
 " Emmet completions for HTML/CSS, etc.
 " Plug 'mattn/emmet-vim'
 
