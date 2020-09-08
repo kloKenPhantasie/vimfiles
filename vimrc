@@ -161,21 +161,15 @@ Plug 'unblevable/quick-scope'
 " Allows to use the dot command for plugins's custom mappings
 Plug 'tpope/vim-repeat'
 
-if has('osxdarwin')
-    Plug '~/.vim/plugged/iTunes-current-track'
-endif
-
 " A little video game showing off some of Vim's latest features
 Plug 'vim/killersheep'
 
 " Allows you to swap two text objects
 Plug 'tommcdo/vim-exchange'
 
-" Emmet completions for HTML/CSS, etc.
-" Plug 'mattn/emmet-vim'
-
-" Helps identify spelling mistakes in code
-" Plug 'jaxbot/semantic-highlight.vim'
+if has('osxdarwin')
+    Plug '~/.vim/plugged/iTunes-current-track'
+endif
 
 call plug#end()
 
