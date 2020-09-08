@@ -340,8 +340,6 @@ se ignorecase             " Ignore casing by default in patterns
 se smartcase              " unless there are any uppercased characters
                           " in them
 
-se lazyredraw
-
 se list                   " Render visible:
 se listchars=tab:\|\      " - tabs
 se listchars+=trail:·     " - trailing spaces
