@@ -311,10 +311,14 @@ se autoindent
 se autoread               " Update the file automatically when changed
                           " outside of Vim
 
-                          " You can now use <BS> to:
+                          " Make it so that backspace can:
 se backspace=indent       " - remove a level of indentation
 se backspace+=eol         " - remove new lines characters
-se backspace+=nostop      " - backspace before the insertion point
+if !has('patch-8.2.0590')
+    se backspace+=start   " - backspace before the insertion point
+else                      "   but if your Vim is recent enough...
+    se backspace+=nostop  "   ... then <C-W> and <C-U> can remove
+endif                     "   characters before the insertion point too.
 
 se belloff=all            " Remove Vim's annoying sounds
 
