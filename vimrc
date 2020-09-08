@@ -168,6 +168,9 @@ endif
 " A little video game showing off some of Vim's latest features
 Plug 'vim/killersheep'
 
+" Allows you to swap two text objects
+Plug 'tommcdo/vim-exchange'
+
 " Emmet completions for HTML/CSS, etc.
 " Plug 'mattn/emmet-vim'
 
