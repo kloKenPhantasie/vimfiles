@@ -359,8 +359,6 @@ se relativenumber         " and a line number relative to the line of
 
 se mouse=                 " Disable the mouse
 
-se pastetoggle=<F2>
-
 se scrolloff=3            " There should always be at least 3 lines
                           " above and below the cursor, otherwise scroll
                           " the text if possible
