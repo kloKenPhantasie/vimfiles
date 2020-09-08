@@ -165,6 +165,7 @@ if has('osxdarwin')
     Plug '~/.vim/plugged/iTunes-current-track'
 endif
 
+" A little video game showing off some of Vim's latest features
 Plug 'vim/killersheep'
 
 " Emmet completions for HTML/CSS, etc.
