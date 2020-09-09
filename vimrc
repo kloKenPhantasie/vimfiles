@@ -276,17 +276,7 @@ endif
 colorscheme hybrid
 let g:airline_theme = 'hybridline'
 
-" STORE VIM FILES INTO VIMFILES DIRECTORY {{{1
-" Swap directory {{{2
-let s:directory_folder = s:VimFolder() . 'tmp'
-silent call execute('se directory=' . s:directory_folder)
-
-" Create the swap directory if it doesn't exist
-if has('unix') && !s:FileExists(s:directory_folder)
-    silent !mkdir ~/.vim/tmp
-endif
-
-" Viminfo file {{{2
+" STORE VIMINFO INTO VIMFILES DIRECTORY {{{1
 let s:viminfo_folder  = s:VimFolder() . 'viminfo'
 if has('viminfo')
     silent call execute('se viminfofile=' . s:viminfo_folder)
@@ -325,6 +315,7 @@ se confirm                " Ask for confirmation when deleting an
 
 se cursorline             " Highlight the cursor's line
 
+se directory=             " Disable swap files, use a VCS instead
 se encoding=utf8
 
 if has('folding')         " Creates folds using markers

@@ -9,8 +9,6 @@ doc/plug.txt
 
 # Tags of documentation
 doc/tags
-# Swap files
-tmp
 # Garbage file created by macOS's Finder
 .DS_Store
 # NETRW's history
