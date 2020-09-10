@@ -393,7 +393,7 @@ se wildmode+=full         " then each full match
 packadd! matchit      " Improved % matching
 
 " Default wikis for vimwiki
-if !empty("$VIMWIKI_LOCATION")
+if !empty($VIMWIKI_LOCATION)
     let g:vimwiki_list = [{ 'path' : $VIMWIKI_LOCATION }]
 endif
 
