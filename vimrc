@@ -315,7 +315,6 @@ se confirm                " Ask for confirmation when deleting an
 
 se cursorline             " Highlight the cursor's line
 
-se directory=             " Disable swap files, use a VCS instead
 se encoding=utf8
 
 if has('folding')         " Creates folds using markers
@@ -375,6 +374,8 @@ endif
 
 se noshowmode             " Don't show the mode in the last line;
                           " Airline already does
+
+se noswapfile             " Disable swap files, use a VCS instead
 
 se ttimeout               " time out for key codes
 se ttimeoutlen=50         " wait up to 50ms after Esc for special key
