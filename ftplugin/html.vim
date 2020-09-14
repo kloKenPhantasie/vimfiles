@@ -1,1 +1,2 @@
 setlocal indentexpr=
+setlocal noautoindent
