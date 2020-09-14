@@ -391,6 +391,8 @@ se wildmode+=full         " then each full match
 
 " MISCELLANEOUS {{{1
 
+language en
+
 packadd! matchit      " Improved % matching
 
 " Default wikis for vimwiki
