@@ -406,6 +406,9 @@ endif
 " Disable vim-surround's insert mappings
 let g:surround_no_insert_mappings = v:true
 
+" Use tab for template completion
+let g:xptemplate_key = '<Tab>'
+
 augroup disableNETRWFoldColumn  " {{{2
     au!
     au BufEnter,WinEnter * if &filetype ==? 'netrw' | se foldcolumn=0
