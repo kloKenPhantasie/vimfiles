@@ -167,6 +167,9 @@ Plug 'vim/killersheep'
 " Allows you to swap two text objects
 Plug 'tommcdo/vim-exchange'
 
+" Snippet engine to ease the writing of boilerplate
+Plug 'drmingdrmer/xptemplate'
+
 if has('osxdarwin')
     Plug '~/.vim/plugged/iTunes-current-track'
 endif
