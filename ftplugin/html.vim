@@ -1,2 +1,2 @@
 setlocal indentexpr=
-setlocal noautoindent
+setlocal nosmartindent
