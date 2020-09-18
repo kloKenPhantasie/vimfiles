@@ -139,6 +139,9 @@ Plug 'whatyouhide/vim-gotham'
 " A dark and colorful color scheme
 Plug 'vimoxide/vim-cinnabar'
 
+" GitHub-like color scheme
+Plug 'cormacrelf/vim-colors-github'
+
 " Displays useful information in the statusline in a pretty way
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
