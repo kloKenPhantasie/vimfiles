@@ -176,6 +176,9 @@ Plug 'tommcdo/vim-exchange'
 " Snippet engine to ease the writing of boilerplate
 Plug 'drmingdrmer/xptemplate'
 
+" Allows for smooth scrolling
+Plug 'psliwka/vim-smoothie'
+
 if has('osxdarwin')
     Plug '~/.vim/plugged/iTunes-current-track'
 endif
