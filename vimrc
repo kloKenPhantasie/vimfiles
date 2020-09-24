@@ -410,9 +410,6 @@ if !empty($VIMWIKI_LOCATION)
     let g:vimwiki_list = [{ 'path' : $VIMWIKI_LOCATION }]
 endif
 
-" Disable vim-surround's insert mappings
-let g:surround_no_insert_mappings = v:true
-
 " Use tab for template completion
 let g:xptemplate_key = '<Tab>'
 
