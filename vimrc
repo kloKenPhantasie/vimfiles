@@ -285,7 +285,7 @@ let g:hybrid_reduced_contrast = 1
 if has('gui_running')
     se background=dark
 endif
-colorscheme hybrid
+colorscheme github
 let g:airline_theme = 'hybridline'
 
 " STORE VIMINFO INTO VIMFILES DIRECTORY {{{1
