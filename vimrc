@@ -282,9 +282,6 @@ endif
 
 let g:hybrid_reduced_contrast = 1
 
-if has('gui_running')
-    se background=dark
-endif
 colorscheme github
 let g:airline_theme = 'hybridline'
 
