@@ -179,6 +179,9 @@ Plug 'drmingdrmer/xptemplate'
 " Allows for smooth scrolling
 Plug 'psliwka/vim-smoothie'
 
+" A plugin to ensure files are well-formatted
+Plug 'editorconfig/editorconfig-vim'
+
 if has('osxdarwin')
     Plug '~/.vim/plugged/iTunes-current-track'
 endif
