@@ -283,6 +283,7 @@ endif
 let g:hybrid_reduced_contrast = 1
 
 colorscheme github
+se background=light
 let g:airline_theme = 'hybridline'
 
 " STORE VIMINFO INTO VIMFILES DIRECTORY {{{1
