@@ -158,9 +158,6 @@ Plug 'michaeljsmith/vim-indent-object'
 " Aligns text using user defined patterns
 Plug 'godlygeek/tabular'
 
-" A personal wiki for Vim
-Plug 'vimwiki/vimwiki'
-
 " Helps you naviagate to any word in the line using 'f' and 't'
 Plug 'unblevable/quick-scope'
 
@@ -405,11 +402,6 @@ se wildmode+=full         " then each full match
 " MISCELLANEOUS {{{1
 
 packadd! matchit      " Improved % matching
-
-" Default wikis for vimwiki
-if !empty($VIMWIKI_LOCATION)
-    let g:vimwiki_list = [{ 'path' : $VIMWIKI_LOCATION }]
-endif
 
 " Use tab for template completion
 let g:xptemplate_key = '<Tab>'
