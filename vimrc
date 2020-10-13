@@ -251,6 +251,8 @@ inoremap {<CR> {<CR>}<C-O>O
 inoremap [<CR> [<CR>]<C-O>O
 inoremap (<CR> (<CR>)<C-O>O
 
+nnoremap ² <C-]>
+
 if !empty($AZERTY) " {{{2
     " Quickly insert a blank line
     " Convenient mappings for Apple's AZERTY keyboard
