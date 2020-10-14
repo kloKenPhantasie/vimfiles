@@ -327,6 +327,9 @@ endif                     "   characters before the insertion point too.
 
 se belloff=all            " Remove Vim's annoying sounds
 
+se clipboard=             " Don't use the system clipboard as the
+                          " default register
+
 se confirm                " Ask for confirmation when deleting an
                           " unsaved buffer
 
