@@ -348,6 +348,8 @@ se ignorecase             " Ignore casing by default in patterns
 se smartcase              " unless there are any uppercased characters
                           " in them
 
+se nojoinspaces           " always add a single space when using J
+
 se list                   " Render visible:
 se listchars=tab:\|\      " - tabs
 se listchars+=trail:·     " - trailing spaces
