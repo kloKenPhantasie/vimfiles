@@ -193,10 +193,6 @@ let maplocalleader = '  '  " 2 spaces
 " cmus {{{2
 " Playpause
 nnoremap <silent> <leader>c :call system("cmus-remote -u")<cr>
-" Previous
-nnoremap <silent> <leader>b :call system("cmus-remote -r")<cr>
-" Next
-nnoremap <silent> <leader>z :call system("cmus-remote -n")<cr>
 " }}}2
 
 " Clear search highlighting
