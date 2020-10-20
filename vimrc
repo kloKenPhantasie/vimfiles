@@ -170,9 +170,6 @@ Plug 'vim/killersheep'
 " Allows you to swap two text objects
 Plug 'tommcdo/vim-exchange'
 
-" Snippet engine to ease the writing of boilerplate
-Plug 'drmingdrmer/xptemplate'
-
 " Allows for smooth scrolling
 Plug 'psliwka/vim-smoothie'
 
@@ -405,12 +402,6 @@ se wildmode+=full         " then each full match
 " MISCELLANEOUS {{{1
 
 packadd! matchit      " Improved % matching
-
-" Use tab for template completion
-let g:xptemplate_key = '<Tab>'
-
-" Remove default spaces around braces, parentheses, brackets, etc.
-let g:xptemplate_vars = 'SParg='
 
 " Disable EditorConfig in remote files and fugitive,
 " as suggested in the repo's README on GitHub
