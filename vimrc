@@ -176,6 +176,9 @@ Plug 'psliwka/vim-smoothie'
 " A plugin to ensure files are well-formatted
 Plug 'editorconfig/editorconfig-vim'
 
+" Emmet completion for HTML/CSS
+Plug 'mattn/emmet-vim'
+
 if has('osxdarwin')
     Plug '~/.vim/plugged/iTunes-current-track'
 endif
@@ -406,6 +409,10 @@ packadd! matchit      " Improved % matching
 " Disable EditorConfig in remote files and fugitive,
 " as suggested in the repo's README on GitHub
 let g:EditorConfig_exclude_patterns = ['fugitive://.*', 'scp://.*']
+
+" Options for emmet-vim {{{2
+let g:user_emmet_install_global = 0
+autocmd FileType html,css EmmetInstall
 
 augroup disableNETRWFoldColumn  " {{{2
     au!
