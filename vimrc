@@ -142,6 +142,9 @@ Plug 'vimoxide/vim-cinnabar'
 " GitHub-like color scheme
 Plug 'cormacrelf/vim-colors-github'
 
+" Another color scheme
+Plug 'NLKNguyen/papercolor-theme'
+
 " Displays useful information in the statusline in a pretty way
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
