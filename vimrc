@@ -128,8 +128,7 @@ Plug 'tpope/vim-fugitive'
 " Git ↑
 " Hub ↓
 Plug 'tpope/vim-rhubarb'
-" }}}3
-
+" Color schemes {{{3
 " My default color scheme
 Plug 'w0ng/vim-hybrid'
 
@@ -144,6 +143,7 @@ Plug 'cormacrelf/vim-colors-github'
 
 " Another color scheme
 Plug 'NLKNguyen/papercolor-theme'
+" }}}3
 
 " Displays useful information in the statusline in a pretty way
 Plug 'vim-airline/vim-airline'
