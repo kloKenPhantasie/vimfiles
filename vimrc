@@ -393,6 +393,10 @@ se noshowmode             " Don't show the mode in the last line;
 
 se noswapfile             " Disable swap files, use a VCS instead
 
+if has('termguicolors')   " Use the same colors in the terminal as the
+    se termguicolors      " colors that would be used in GVim
+endif
+
 se ttimeout               " time out for key codes
 se ttimeoutlen=50         " wait up to 50ms after Esc for special key
 
