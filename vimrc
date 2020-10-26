@@ -209,9 +209,9 @@ nnoremap <silent> <leader>v :<C-U>tabedit $MYVIMRC<cr>
 nnoremap <silent> <leader>V :<C-U>tabedit $MYGVIMRC<cr>
 
 " Save and stage changes
-nnoremap <silent> <leader>w :<C-U>Gw<cr>
+nnoremap <silent> <leader>s :<C-U>Gw<cr>
 " Save without staging changes
-nnoremap <silent> <leader>W :<C-U>w<cr>
+nnoremap <silent> <leader>S :<C-U>w<cr>
 
 " Navigate through windows {{{2
 nnoremap <leader>w <C-W>w
