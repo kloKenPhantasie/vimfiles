@@ -266,8 +266,8 @@ tnoremap <C-W>\ :
 if !empty($AZERTY) " {{{2
     " Quickly insert a blank line
     " Convenient mappings for Apple's AZERTY keyboard
-    nnoremap § o<Esc>k
-    nnoremap ¶ O<Esc>j
+    nnoremap § o<Esc>kgM
+    nnoremap ¶ O<Esc>jgM
 
     " Toggle casing of a single character
     noremap ç ~
@@ -280,8 +280,8 @@ if !empty($AZERTY) " {{{2
 else
     " Quickly insert a blank line
     " Convenient mappings for Apple's English International keyboard
-    nnoremap § o<Esc>k
-    nnoremap ± O<Esc>j
+    nnoremap § o<Esc>kgM
+    nnoremap ± O<Esc>jgM
 
     " § is closer to the home row than <Esc>
     onoremap  § <Esc>
