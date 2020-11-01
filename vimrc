@@ -257,6 +257,12 @@ inoremap (<CR> (<CR>)<C-O>O
 
 nnoremap ² <C-]>
 
+" We don't use it as a leader key; how about we use it to write
+" commands? It avoids the inconvenience of pressing shift to write
+" ':' in QWERTY keyboards.
+ noremap \      :
+tnoremap <C-W>\ :
+
 if !empty($AZERTY) " {{{2
     " Quickly insert a blank line
     " Convenient mappings for Apple's AZERTY keyboard
