@@ -39,62 +39,12 @@ fun s:VimFolder() abort  " {{{2
 endfun
 
 " VIM-PLUG {{{1
-" Install vim-plug if you don't have it yet {{{2
+
+" Install vim-plug if you don't have it yet
 " This will only work on Unix machines (BSD, Linux, etc.)
-" Helper functions {{{3
-fun s:get_vim_plug() abort
-    if !s:user_wants_to('Get vim-plug?')
-        return v:false
-    endif
-    echomsg 'Downloading vim-plug'
-    !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-\ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-    echomsg 'Installing vim-plug'
-    autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
-    return v:true
-endfun
-
-fun s:user_wants_to(prompt) abort
-    let [l:yes, l:no] = [1, 2]
-    let l:res = a:prompt->confirm("&Yes\n&No")
-    return l:res == l:yes
-endfun
-" }}}3
-
-fun s:try_to_get_vim_plug() abort
-    if !has('unix')
-        " This script requires Unix to run, as it is dependent on the
-        " existence of the cURL command in the path (installed natively
-        " on many Unix machines), and uses Unix-style path
-        " representations
-        return
-    endif
-    if !has('dialog_' . (has('gui_running') ? 'gui' : 'con'))
-        " Can't ask if the user wants to get vim-plug; default to no
-        return
-    endif
-
-    let vim_plug_path = '~/.vim/autoload/plug.vim'
-    if get(s:, 'skip_vim_plug_install', v:false)
-        " User doesn't want to install vim-plug
-        return
-    endif
-    if s:FileExists(vim_plug_ppath)
-        " No need to install
-        continue
-    endif
-    if !s:get_vim_plug()
-        let l:msg = 'Add the following line at the start of your '
-        let l:msg.= 'vimrc to avoid being prompted in the future:'
-        let l:msg.= "\n" . 'let s:skip_vim_plug_install = v:true '
-        echomsg l:msg
-        return
-    endif
-endfun
-
-call s:try_to_get_vim_plug()
-
-" vim-plug configuration {{{2
+if has('unix')
+    source ~/.vim/scripts/install-vim-plug.vim
+endif
 
 let s:vim_plug_folder = s:VimFolder() . 'plugged'
 call plug#begin(s:vim_plug_folder)
@@ -102,17 +52,17 @@ call plug#begin(s:vim_plug_folder)
 " Get and update vim-plug's documentation
 Plug 'junegunn/vim-plug'
 
-" Filetype plugins {{{3
+" Filetype plugins {{{2
 " Golang
 Plug 'fatih/vim-go', { 'do' : ':GoInstallBinaries' }
 " Swift
 Plug 'keith/swift.vim'
-" Plugins for working with Git {{{3
+" Plugins for working with Git {{{2
 Plug 'tpope/vim-fugitive'
 " Git ↑
 " Hub ↓
 Plug 'tpope/vim-rhubarb'
-" Color schemes {{{3
+" Color schemes {{{2
 " My default color scheme
 Plug 'w0ng/vim-hybrid'
 
@@ -127,7 +77,7 @@ Plug 'cormacrelf/vim-colors-github'
 
 " Another color scheme
 Plug 'NLKNguyen/papercolor-theme'
-" }}}3
+" }}}2
 
 " Displays useful information in the statusline in a pretty way
 Plug 'vim-airline/vim-airline'
