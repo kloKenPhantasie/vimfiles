@@ -54,18 +54,6 @@ fun s:get_vim_plug() abort
     return v:true
 endfun
 
-fun s:get_vim_plug_docs() abort
-    if !s:user_wants_to("Get vim-plug's docs?")
-        return v:false
-    endif
-    echomsg "Downloading vim-plug's help file"
-    !curl -fLo ~/.vim/doc/plug.txt --create-dirs
-\ https://raw.githubusercontent.com/junegunn/vim-plug/master/doc/plug.txt
-    echomsg "Scanning tags of vim-plug's help file"
-    helptags ~/.vim/doc
-    return v:true
-endfun
-
 fun s:user_wants_to(prompt) abort
     let [l:yes, l:no] = [1, 2]
     let l:res = a:prompt->confirm("&Yes\n&No")
@@ -87,28 +75,22 @@ fun s:try_to_get_vim_plug() abort
         return
     endif
 
-    let l:msg = 'Add the following line at the start of your '
-    let l:msg.= 'vimrc to avoid being prompted in the future:'
-    let installs = #{
-\       vim_plug      : '~/.vim/autoload/plug.vim',
-\       vim_plug_docs : '~/.vim/doc/plug.txt',
-\   }
-    for [install, path] in items(installs)
-        let l:toggle_variable_name = 'skip_' . install . '_install'
-        if get(s:, l:toggle_variable_name, v:false)
-            " User has skipped further installs
-            return
-        endif
-        if s:FileExists(path)
-            " No need to install
-            continue
-        endif
-        if !s:get_{install}()
-            let l:ine = 'let s:skip_' . install . '_install = v:true'
-            echomsg l:msg . "\n" . l:ine
-            return
-        endif
-    endfor
+    let vim_plug_path = '~/.vim/autoload/plug.vim'
+    if get(s:, 'skip_vim_plug_install', v:false)
+        " User doesn't want to install vim-plug
+        return
+    endif
+    if s:FileExists(vim_plug_ppath)
+        " No need to install
+        continue
+    endif
+    if !s:get_vim_plug()
+        let l:msg = 'Add the following line at the start of your '
+        let l:msg.= 'vimrc to avoid being prompted in the future:'
+        let l:msg.= "\n" . 'let s:skip_vim_plug_install = v:true '
+        echomsg l:msg
+        return
+    endif
 endfun
 
 call s:try_to_get_vim_plug()
@@ -117,6 +99,9 @@ call s:try_to_get_vim_plug()
 
 let s:vim_plug_folder = s:VimFolder() . 'plugged'
 call plug#begin(s:vim_plug_folder)
+
+" Get and update vim-plug's documentation
+Plug 'junegunn/vim-plug'
 
 " Filetype plugins {{{3
 " Golang
