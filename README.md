@@ -5,9 +5,9 @@ A partial copy of my current .vim directory.
 Feel free to copy any part of this repository that interests you; the
 very permissive license of this repository (0BSD) was chosen to
 encourage this.
-However, please don't blindly clone this repository to your vimfiles: one
-major advantage of using Vim is that you can adapt it to your workflow
-(which is definitely different from mine).
+However, you should probably not clone this repository in your machine;
+it's very rewarding to build your Vim configuration yourself! My vimrc
+does stuff you may not want to do (e.g. automatically install vim-plug).
 
 ## Cool mappings for AZERTY keyboards
 
