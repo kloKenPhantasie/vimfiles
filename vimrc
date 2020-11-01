@@ -61,7 +61,6 @@ fun s:user_wants_to(prompt) abort
 endfun
 " }}}3
 
-" UNTESTED
 fun s:try_to_get_vim_plug() abort
     if !has('unix')
         " This script requires Unix to run, as it is dependent on the
