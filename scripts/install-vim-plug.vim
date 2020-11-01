@@ -35,7 +35,7 @@ fun s:try_to_get_vim_plug() abort
     endif
     if kkp#FileExists(vim_plug_path)
         " No need to install
-        continue
+        return
     endif
     if !s:get_vim_plug()
         let l:msg = 'Add the following line at the start of your '
