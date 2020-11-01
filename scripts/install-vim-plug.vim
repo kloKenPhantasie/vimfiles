@@ -33,7 +33,7 @@ fun s:try_to_get_vim_plug() abort
         " User doesn't want to install vim-plug
         return
     endif
-    if s:FileExists(vim_plug_path)
+    if kkp#FileExists(vim_plug_path)
         " No need to install
         continue
     endif

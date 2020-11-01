@@ -24,20 +24,6 @@ if has('nvim')
     finish
 endif
 
-" USEFUL FUNCTIONS {{{1
-fun s:FileExists(file) abort  " {{{2
-    return !empty(glob(a:file))
-endfun
-
-fun s:VimFolder() abort  " {{{2
-    if has('unix')
-        return '~/.vim/'
-    elseif has('win32')
-        return '$HOME\vimfiles\'
-    endif
-    throw 'Unknown operating system'
-endfun
-
 " VIM-PLUG {{{1
 
 " Install vim-plug if you don't have it yet
@@ -46,7 +32,7 @@ if has('unix')
     source ~/.vim/scripts/install-vim-plug.vim
 endif
 
-let s:vim_plug_folder = s:VimFolder() . 'plugged'
+let s:vim_plug_folder = kkp#VimFolder() . 'plugged'
 call plug#begin(s:vim_plug_folder)
 
 " Get and update vim-plug's documentation
@@ -233,7 +219,7 @@ se background=light
 let g:airline_theme = 'hybridline'
 
 " STORE VIMINFO INTO VIMFILES DIRECTORY {{{1
-let s:viminfo_folder  = s:VimFolder() . 'viminfo'
+let s:viminfo_folder  = kkp#VimFolder() . 'viminfo'
 if has('viminfo')
     silent call execute('se viminfofile=' . s:viminfo_folder)
 endif
