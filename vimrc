@@ -128,11 +128,6 @@ nnoremap <silent> <leader>v :<C-U>tabedit $MYVIMRC<cr>
 " Quickly edit your gvimrc
 nnoremap <silent> <leader>V :<C-U>tabedit $MYGVIMRC<cr>
 
-" Save and stage changes
-nnoremap <silent> <leader>s :<C-U>Gw<cr>
-" Save without staging changes
-nnoremap <silent> <leader>S :<C-U>w<cr>
-
 " Navigate through windows {{{2
 nnoremap <leader>w <C-W>w
 nnoremap <leader>W <C-W>W
