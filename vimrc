@@ -237,6 +237,12 @@ augroup qs_theme
 
 augroup END
 
+augroup fix_yami
+    au!
+    au ColorScheme yami                                                |
+\       hi! link StatusLine ColorColumn
+augroup END
+
 let g:hybrid_reduced_contrast = 1
 
 colorscheme github
