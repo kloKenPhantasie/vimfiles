@@ -211,6 +211,32 @@ endif
 
 " THEMING {{{1
 
+" Special theming for quick-scope
+augroup qs_theme
+    au!
+
+    au ColorScheme cinnabar
+\       hi! link QuickScopePrimary cinnabarBlue
+
+    au ColorScheme github
+\       hi! link QuickScopeSecondary Question
+
+    au ColorScheme PaperColor
+\   if &background == 'dark'                                           |
+\       hi QuickScopePrimary guifg=#00af5f ctermfg=35                  |
+\   else                                                               |
+\       hi QuickScopePrimary guifg=#ff8700 ctermfg=208                 |
+
+    au ColorScheme photon
+\       hi! link QuickScopePrimary Todo                                |
+\       hi QuickScopeSecondary ctermfg=108 guifg=#87af87
+
+    au ColorScheme yami
+\       hi! link QuickScopePrimary Todo                                |
+\       hi QuickScopeSecondary guifg=#52de97
+
+augroup END
+
 let g:hybrid_reduced_contrast = 1
 
 colorscheme github
