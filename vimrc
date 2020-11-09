@@ -1,6 +1,3 @@
-" WARNING: I mainly use macOS, this script may or may not work on other
-"          operating systems.
-
 " 1,000 thanks to romainl for his "idiomatic vimrc" project.
 " Give it a read: https://github.com/romainl/idiomatic-vimrc#readme
 
