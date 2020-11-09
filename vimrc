@@ -63,6 +63,10 @@ Plug 'cormacrelf/vim-colors-github'
 
 " Another color scheme
 Plug 'NLKNguyen/papercolor-theme'
+
+" Monochrome
+Plug 'danishprakash/vim-yami'
+Plug 'axvr/photon.vim'
 " }}}2
 
 " Displays useful information in the statusline in a pretty way
