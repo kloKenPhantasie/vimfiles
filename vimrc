@@ -212,7 +212,7 @@ endif
 " THEMING {{{1
 
 " Special theming for quick-scope
-augroup qs_theme
+augroup qs_colors
     au!
 
     au ColorScheme cinnabar
