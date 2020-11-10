@@ -315,10 +315,8 @@ se nrformats=bin          " - binary literals
 se nrformats+=hex         " - hexadecimal literals
 se nrformats+=octal       " - octal literals
 
-se numberwidth=3          " Use 3 columns to
-se number                 " Show line number at cursor
-se relativenumber         " and a line number relative to the line of
-                          " the cursor for any other lines
+se numberwidth=3          " Use 3 columns to display
+se relativenumber         " the line number relative to the cursor line
                           " See `:h number_relativenumber`
 
 se mouse=                 " Disable the mouse
