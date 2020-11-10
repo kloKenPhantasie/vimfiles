@@ -315,6 +315,7 @@ se nrformats=bin          " - binary literals
 se nrformats+=hex         " - hexadecimal literals
 se nrformats+=octal       " - octal literals
 
+se numberwidth=3          " Use 3 columns to
 se number                 " Show line number at cursor
 se relativenumber         " and a line number relative to the line of
                           " the cursor for any other lines
