@@ -60,6 +60,7 @@ Plug 'cormacrelf/vim-colors-github'
 
 " Another color scheme
 Plug 'NLKNguyen/papercolor-theme'
+Plug 'beikome/cosme.vim'
 
 " Monochrome
 Plug 'danishprakash/vim-yami'
