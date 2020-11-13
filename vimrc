@@ -46,25 +46,16 @@ Plug 'tpope/vim-fugitive'
 " Hub ↓
 Plug 'tpope/vim-rhubarb'
 " Color schemes {{{2
-" My default color scheme
-Plug 'w0ng/vim-hybrid'
-
-" Very dark color scheme
-Plug 'whatyouhide/vim-gotham'
-
-" A dark and colorful color scheme
 Plug 'vimoxide/vim-cinnabar'
-
-" GitHub-like color scheme
 Plug 'cormacrelf/vim-colors-github'
-
-" Another color scheme
+Plug 'whatyouhide/vim-gotham'
+Plug 'w0ng/vim-hybrid'
 Plug 'NLKNguyen/papercolor-theme'
-Plug 'beikome/cosme.vim'
 
 " Monochrome
-Plug 'danishprakash/vim-yami'
+Plug 'beikome/cosme.vim'
 Plug 'axvr/photon.vim'
+Plug 'danishprakash/vim-yami'
 " }}}2
 
 " Displays useful information in the statusline in a pretty way
