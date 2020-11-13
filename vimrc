@@ -243,9 +243,8 @@ augroup END
 
 let g:hybrid_reduced_contrast = 1
 
-colorscheme github
-se background=light
-let g:airline_theme = 'hybridline'
+colorscheme cosme
+let g:airline_theme = 'cosme'
 
 " STORE VIMINFO INTO VIMFILES DIRECTORY {{{1
 let s:viminfo_folder  = kkp#VimFolder() . 'viminfo'
