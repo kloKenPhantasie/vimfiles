@@ -373,3 +373,4 @@ augroup disableNETRWFoldColumn  " {{{2
     au BufEnter,WinEnter * if &filetype ==? 'netrw' | se foldcolumn=0
 augroup END  " }}}2
 
+let g:lisp_rainbow = v:true
