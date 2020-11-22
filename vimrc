@@ -95,6 +95,9 @@ Plug 'editorconfig/editorconfig-vim'
 " Emmet completion for HTML/CSS
 Plug 'mattn/emmet-vim'
 
+" Integration of linters in Vim
+Plug 'drgarcia1986/python-compilers.vim'
+
 if has('osxdarwin')
     Plug '~/.vim/plugged/iTunes-current-track'
 endif
