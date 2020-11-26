@@ -224,8 +224,8 @@ augroup qs_colors
 \       hi QuickScopeSecondary ctermfg=108 guifg=#87af87
 
     au ColorScheme yami
-\       hi! link QuickScopePrimary Todo                                |
-\       hi QuickScopeSecondary guifg=#52de97
+\       hi QuickScopePrimary guifg=#52de97                             |
+\       hi! link QuickScopeSecondary Todo
 
 augroup END
 
