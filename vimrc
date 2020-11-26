@@ -107,7 +107,7 @@ call plug#end()
 " LEADER {{{1
 
 let mapleader      = ' '   " 1 space
-let maplocalleader = '  '  " 2 spaces
+let maplocalleader = 'Q'
 
 " cmus {{{2
 " Playpause
