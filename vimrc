@@ -231,7 +231,7 @@ augroup END
 
 augroup fix_yami
     au!
-    au ColorScheme yami                                                |
+    au ColorScheme yami
 \       hi! link StatusLine ColorColumn
 augroup END
 
