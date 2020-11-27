@@ -347,8 +347,6 @@ endif
 se ttimeout               " time out for key codes
 se ttimeoutlen=50         " wait up to 50ms after Esc for special key
 
-se updatetime=250
-
 if has('wildmenu')        " Display completion matches in a status line
     se wildmenu
 endif
