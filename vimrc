@@ -98,8 +98,6 @@ Plug 'mattn/emmet-vim'
 " Integration of linters in Vim
 Plug 'drgarcia1986/python-compilers.vim'
 
-" Display and reload HTML webpages on write and on buffer change
-Plug 'turbio/bracey.vim'
 
 if has('osxdarwin')
     Plug '~/.vim/plugged/iTunes-current-track'
