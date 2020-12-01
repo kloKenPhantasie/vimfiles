@@ -244,7 +244,7 @@ augroup END
 let g:hybrid_reduced_contrast = 1
 
 colorscheme cosme
-let g:airline_theme = 'cosme'
+let g:airline_theme = 'soda'
 
 " STORE VIMINFO INTO VIMFILES DIRECTORY {{{1
 let s:viminfo_folder  = kkp#VimFolder() . 'viminfo'
