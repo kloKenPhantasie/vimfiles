@@ -101,6 +101,9 @@ Plug 'drgarcia1986/python-compilers.vim'
 " Smarter substitutions and easySwitching between letter_casings
 Plug 'tpope/vim-abolish'
 
+" Automagically balances parentheses in Lisp files
+Plug 'bhurlow/vim-parinfer'
+
 if has('osxdarwin')
     Plug '~/.vim/plugged/iTunes-current-track'
 endif
