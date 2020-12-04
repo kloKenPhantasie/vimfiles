@@ -358,6 +358,8 @@ endif
 se wildmode=longest       " Complete longest common string,
 se wildmode+=full         " then each full match
 
+se nowrap                 " Disable line wrapping
+
 " MISCELLANEOUS {{{1
 
 packadd! matchit      " Improved % matching
