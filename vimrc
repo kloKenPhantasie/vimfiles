@@ -35,11 +35,6 @@ call plug#begin(s:vim_plug_folder)
 " Get and update vim-plug's documentation
 Plug 'junegunn/vim-plug'
 
-" Filetype plugins {{{2
-" Golang
-Plug 'fatih/vim-go', { 'do' : ':GoInstallBinaries' }
-" Swift
-Plug 'keith/swift.vim'
 " Plugins for working with Git {{{2
 Plug 'tpope/vim-fugitive'
 " Git ↑
