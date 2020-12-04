@@ -241,7 +241,7 @@ augroup END
 
 let g:hybrid_reduced_contrast = 1
 
-colorscheme cosme
+colorscheme yami
 let g:airline_theme = 'soda'
 
 " STORE VIMINFO INTO VIMFILES DIRECTORY {{{1
@@ -376,3 +376,14 @@ augroup disableNETRWFoldColumn  " {{{2
 augroup END  " }}}2
 
 let g:lisp_rainbow = v:true
+
+let g:vim_parinfer_globs = [
+\   '*.clj', '*.cljs', '*.cljc', '*.edn',
+\   '*.el',
+\   '*.lisp', '*.cl',
+\   '*.rkt',
+\   '*.ss',
+\   '*.lfe',
+\   '*.fnl', '*.fennel',
+\   '*.carp'
+\]
