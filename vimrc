@@ -72,7 +72,7 @@ Plug 'godlygeek/tabular'
 " Helps you naviagate to any word in the line using 'f' and 't'
 Plug 'unblevable/quick-scope'
 
-" Allows to use the dot command for plugins's custom mappings
+" Allows to use the dot command for plugins' custom mappings
 Plug 'tpope/vim-repeat'
 
 " A little video game showing off some of Vim's latest features
