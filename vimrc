@@ -93,6 +93,9 @@ Plug 'mattn/emmet-vim'
 " Integration of linters in Vim
 Plug 'drgarcia1986/python-compilers.vim'
 
+" A REPL plugin for Common Lisp
+Plug 'vlime/vlime', {'rtp': 'vim/'}
+
 " Smarter substitutions and easySwitching between letter_casings
 Plug 'tpope/vim-abolish'
 
