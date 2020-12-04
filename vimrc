@@ -102,6 +102,9 @@ Plug 'tpope/vim-abolish'
 " Automagically balances parentheses in Lisp files
 Plug 'bhurlow/vim-parinfer'
 
+" Templating plugin for the creation of Vim color schemes
+Plug 'lifepillar/vim-colortemplate'
+
 if has('osxdarwin')
     Plug '~/.vim/plugged/iTunes-current-track'
 endif
