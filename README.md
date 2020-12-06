@@ -16,7 +16,7 @@ advantage of the keys unused by Vim.
 If that's interesting to you, feel free to copy the lines of code below
 in your vimrc.
 
-```
+```vim
 " Quickly insert a blank line
 " Convenient mappings for Apple's AZERTY keyboard
 nnoremap § o<Esc>k
