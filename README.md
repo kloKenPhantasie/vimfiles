@@ -19,8 +19,8 @@ in your vimrc.
 ```vim
 " Quickly insert a blank line
 " Convenient mappings for Apple's AZERTY keyboard
-nnoremap § o<Esc>k
-nnoremap ¶ O<Esc>j
+nnoremap <expr> § 'o<Esc>' . v:count1 . 'kgM'
+nnoremap        ¶ O<Esc>jgM
 
 " Toggle casing of a single character
 noremap ç ~
