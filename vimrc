@@ -205,9 +205,9 @@ nnoremap <expr> § 'o<Esc>' . v:count1 . 'kgM'
 " the last line added by "O" always ends up above the current line, we
 " only need to move the cursor down once.
 if !empty($AZERTY)
-    nnoremap ¶ o<Esc>jgM
+    nnoremap ¶ O<Esc>jgM
 else
-    nnoremap ± o<Esc>jgM
+    nnoremap ± O<Esc>jgM
 endif
 
 if !empty($AZERTY) " {{{2
