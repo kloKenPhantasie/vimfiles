@@ -411,3 +411,6 @@ let g:vim_parinfer_globs = [
 \   '*.fnl', '*.fennel',
 \   '*.carp'
 \]
+
+" Browse man pages without exiting Vim (see :help :Man)
+runtime ftplugin/man.vim
