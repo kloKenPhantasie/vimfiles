@@ -266,6 +266,16 @@ let g:hybrid_reduced_contrast = 1
 colorscheme yami
 let g:airline_theme = 'soda'
 
+" Don't display "mixed indent" warning on lines featuring spaces after
+" tabs, only for lines featuring tabs between or after spaces
+" e.g.: (tabs are represented with "T"s, spaces with "S"s)
+" NO WARNING: T-------T-------SSSS
+" WARNING:    SSSSSSSST-------
+" WARNING:    SSSST---SSSS
+"
+" See :help airline-whitespace
+let g:airline#extensions#whitespace#mixed_indent_algo = 2
+
 " STORE VIMINFO INTO VIMFILES DIRECTORY {{{1
 let s:viminfo_folder  = kkp#VimFolder() . 'viminfo'
 if has('viminfo')
