@@ -264,6 +264,8 @@ augroup END
 let g:hybrid_reduced_contrast = 1
 
 colorscheme yami
+
+" Airline related {{{2
 let g:airline_theme = 'soda'
 
 " Don't display "mixed indent" warning on lines featuring spaces after
