@@ -12,7 +12,6 @@ let g:macvim_default_touchbar_fullscreen=0
 " SET FONTS {{{1
 " Quickly see gVim's font size
 nnoremap <leader>F :se gfn?<cr>
-nnoremap <leader>f :call SetFontSize()<cr>
 nnoremap <expr> <leader>f ':<c-u>set guifont=' . g:preferred_font . ':h' .
 \(v:count ? v:count . '<cr>' : '')
 
