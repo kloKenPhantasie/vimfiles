@@ -273,7 +273,7 @@ let g:airline_theme = 'soda'
 " e.g.: (tabs are represented with "T"s, spaces with "S"s)
 " NO WARNING: T-------T-------SSSS
 " WARNING:    SSSSSSSST-------
-" WARNING:    SSSST---SSSS
+" WARNING:    T-------SSSST---SSSS
 "
 " See :help airline-whitespace
 let g:airline#extensions#whitespace#mixed_indent_algo = 2
