@@ -245,7 +245,7 @@ augroup qs_colors
 \   else                                                               |
 \       hi QuickScopePrimary guifg=#ff8700 ctermfg=208                 |
 
-    au ColorScheme photon
+    au ColorScheme {anti,}photon
 \       hi! link QuickScopePrimary Todo                                |
 \       hi QuickScopeSecondary ctermfg=108 guifg=#87af87
 
