@@ -141,9 +141,6 @@ nnoremap <silent> <leader>v :<C-U>tabedit $MYVIMRC<cr>
 nnoremap <silent> <leader>V :<C-U>tabedit $MYGVIMRC<cr>
 
 " Navigate through windows {{{2
-nnoremap <leader>w <C-W>w
-nnoremap <leader>W <C-W>W
-
 nnoremap <leader>o <C-W>o
 nnoremap <leader>O <C-W>c
 
