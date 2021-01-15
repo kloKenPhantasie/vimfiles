@@ -115,6 +115,9 @@ if has('osxdarwin')
     Plug '~/.vim/plugged/iTunes-current-track'
 endif
 
+" Focus in one section of text by removing the rest
+Plug 'chrisbra/NrrwRgn'
+
 call plug#end()
 
 " LEADER {{{1
