@@ -123,7 +123,6 @@ call plug#end()
 " LEADER {{{1
 
 let mapleader      = ' '   " 1 space
-let maplocalleader = 'Q'
 
 " cmus {{{2
 " Playpause
