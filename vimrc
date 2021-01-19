@@ -63,6 +63,15 @@ Plug 'danishprakash/vim-yami'
 " Indent objects; useful for Python
 Plug 'michaeljsmith/vim-indent-object'
 
+" THE FOLLOWING PLUGINS RELY ON THIS ONE
+Plug 'kana/vim-textobj-user'
+
+" Function and class text objects for Python
+Plug 'bps/vim-textobj-python'
+
+" List element (or function argument) text object; language agnostic
+Plug 'sgur/vim-textobj-parameter'
+
 " }}}2
 
 " Displays useful information in the statusline in a pretty way
