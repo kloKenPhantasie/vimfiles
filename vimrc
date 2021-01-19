@@ -57,6 +57,12 @@ Plug 'NLKNguyen/papercolor-theme'
 Plug 'beikome/cosme.vim'
 Plug 'axvr/photon.vim'
 Plug 'danishprakash/vim-yami'
+
+" Custom text objects {{{2
+
+" Indent objects; useful for Python
+Plug 'michaeljsmith/vim-indent-object'
+
 " }}}2
 
 " Displays useful information in the statusline in a pretty way
@@ -68,9 +74,6 @@ Plug 'ap/vim-css-color'
 
 " Keybindings for manipulating parentheses, braces, HTML/XML tags, etc.
 Plug 'tpope/vim-surround'
-
-" Add indent objects; useful for Python
-Plug 'michaeljsmith/vim-indent-object'
 
 " Aligns text using user defined patterns
 Plug 'godlygeek/tabular'
