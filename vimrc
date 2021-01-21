@@ -409,7 +409,7 @@ let g:EditorConfig_exclude_patterns = ['fugitive://.*', 'scp://.*']
 
 " Options for emmet-vim {{{2
 let g:user_emmet_install_global = 0
-autocmd FileType html,css,php EmmetInstall
+autocmd FileType html,css,php,javascript EmmetInstall
 
 augroup disableNETRWFoldColumn  " {{{2
     au!
