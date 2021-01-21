@@ -156,6 +156,9 @@ nnoremap <silent> <leader>w :<C-U>w<cr>
 " Save and stage changes
 nnoremap <silent> <leader>W :<C-U>Gw<cr>
 
+" Open Fugitive's summary window
+nnoremap <leader>g :<C-U>G<cr>
+
 " Navigate through windows {{{2
 nnoremap <leader>o <C-W>o
 nnoremap <leader>O <C-W>c
