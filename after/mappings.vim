@@ -42,8 +42,8 @@ noremap       gr      gT
 tnoremap <C-W>gr <C-W>gT
 
 " Quickly close tabs
-noremap  <silent>      gx      :tabclose<cr>
-tnoremap <silent> <C-W>gx <C-W>:tabclose<cr>
+noremap  <silent> <leader>x      :tabclose<cr>
+tnoremap <silent> <C-W>x    <C-W>:tabclose<cr>
 " }}}1
 
 " Remap ZQ to quit all
@@ -102,3 +102,9 @@ else
     tnoremap  § <Esc>
 endif
 
+" Use evil-exchange's mappings {{{1
+let g:exchange_no_mappings = v:true
+nmap gx  <Plug>(Exchange)
+xmap  X  <Plug>(Exchange)
+nmap gxc <Plug>(ExchangeClear)
+nmap gxx <Plug>(ExchangeLine)
