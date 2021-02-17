@@ -97,7 +97,9 @@ Plug 'tpope/vim-repeat'
 Plug 'vim/killersheep'
 
 " Allows you to swap two text objects
-Plug 'tommcdo/vim-exchange'
+Plug 'kloKenPhantasie/vim-exchange', {
+\   'branch' : 'persist-hl-status-on-cs-change'
+\}
 
 " Allows for smooth scrolling
 Plug 'psliwka/vim-smoothie'
