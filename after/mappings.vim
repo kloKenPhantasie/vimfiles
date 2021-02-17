@@ -5,6 +5,9 @@ let mapleader      = ' '   " 1 space
 nnoremap <silent> <leader>c :call system("cmus-remote -u")<cr>
 " }}}1
 
+" A Magit-inspired mapping; useful for making commits
+nnoremap <C-C><C-C> :xit<cr>
+
 " Clear search highlighting
 nnoremap <silent> <leader>l :<C-U>nohlsearch<cr>
 
