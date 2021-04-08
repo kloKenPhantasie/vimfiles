@@ -339,3 +339,5 @@ let g:vim_parinfer_globs = [
 
 " Browse man pages without exiting Vim (see :help :Man)
 runtime ftplugin/man.vim
+
+let g:kite_supported_languages = ['*']
