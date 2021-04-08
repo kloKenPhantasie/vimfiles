@@ -135,6 +135,9 @@ Plug 'chrisbra/NrrwRgn'
 " Automatically close brackets on newlines
 Plug 'rstacruz/vim-closer'
 
+" AI-powered auto-completions
+Plug 'kiteco/vim-plugin'
+
 call plug#end()
 
 " THEMING {{{1
